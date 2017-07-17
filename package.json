@@ -1,0 +1,20 @@
+{
+  "name": "babbel-bowling-challenge",
+  "version": "1.0.0",
+  "description": "The code challenge for the Bowling CHallenge from Babbel",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-babel": "^6.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/gulp",
+    "test": "test"
+  },
+  "keywords": [
+    "Gulp",
+    "JavaScript"
+  ],
+  "author": "Sean Amarasinghe",
+  "license": "ISC"
+}
