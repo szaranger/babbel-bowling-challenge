@@ -1,14 +1,17 @@
 {
   "name": "babbel-bowling-challenge",
   "version": "1.0.0",
-  "description": "The code challenge for the Bowling CHallenge from Babbel",
+  "description": "The code challenge for the Bowling Challenge from Babbel",
   "main": "index.js",
   "dependencies": {
-    "gulp-babel": "^6.1.2"
+    "gulp-babel": "^6.1.2",
+    "http-server": "^0.10.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0"
+  },
   "scripts": {
-    "start": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp",
     "test": "test"
   },
   "keywords": [
