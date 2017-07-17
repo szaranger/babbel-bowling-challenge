@@ -8,11 +8,12 @@
     "http-server": "^0.10.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.6.0"
+    "babel-preset-env": "^1.6.0",
+    "expect": "^1.20.2"
   },
   "scripts": {
     "build": "./node_modules/.bin/gulp",
-    "test": "test"
+    "start": "npm run build && ./node_modules/.bin/http-server"
   },
   "keywords": [
     "Gulp",

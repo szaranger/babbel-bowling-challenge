@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Test Runner</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th>Player</th>
+        <th>Frame <span id="frame_header1"></span></th>
+        <th>Frame <span id="frame_header2"></span></th>
+        <th>Frame <span id="frame_header3"></span></th>
+        <th>Frame <span id="frame_header4"></span></th>
+        <th>Frame <span id="frame_header5"></span></th>
+        <th>Frame <span id="frame_header6"></span></th>
+        <th>Frame <span id="frame_header7"></span></th>
+        <th>Frame <span id="frame_header8"></span></th>
+        <th>Frame <span id="frame_header9"></span></th>
+        <th>Frame <span id="frame_header10"></span></th>
+        <th>Total</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="frame1"></td>
+          <td id="frame2"></td>
+          <td id="frame3"></td>
+          <td id="frame4"></td>
+          <td id="frame5"></td>
+          <td id="frame6"></td>
+          <td id="frame7"></td>
+          <td id="frame8"></td>
+          <td id="frame9"></td>
+          <td id="frame10"></td>
+          <td id="frame11"></td>
+          <td id="total"></td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="https://npmcdn.com/expect/umd/expect.min.js"></script>
+    <script src='dist/app.js'></script>
+    <script>
+      // Tests
+      // Failing tests can be seen in your browser console
+
+      const game = new Game();
+      game.addToScore(1, 8, false, false);
+      expect(game.getScore()).toEqual(8);
+
+
+    </script>
+  </body>
+</html>

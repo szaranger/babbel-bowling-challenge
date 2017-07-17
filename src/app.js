@@ -1,12 +1,3 @@
-class Frame {
-
-  constructor(number, roll) {
-    this.number = number;
-    this.roll = roll;
-  }
-
-}
-
 class Game {
 
   constructor() {
@@ -45,10 +36,12 @@ class Game {
     for (let i = 1; i < this.frames + 1; i++) {
       let score = 0;
       let total = 0;
+
       for (let j = 1; j < 3; j++) {
         if (score !== 10) {
           score = Math.floor((Math.random() * (10 - score)) + 1);
           total = total + score;
+          this.addToScore(i, score, score === 10, total === 10);
           document.getElementById(`frame_header${i}`).innerText = i;
           document.getElementById('frame1').innerText = name;
           document.getElementById(`frame${i + 1}`).innerText = score;
@@ -56,7 +49,6 @@ class Game {
           console.log('Roll: ', j);
           console.log('Score: ', score);
           console.log('Total: ', total);
-          this.addToScore(i, score, score === 10, total === 10);
         }
       }
     }
